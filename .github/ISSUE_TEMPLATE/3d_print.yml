@@ -16,7 +16,7 @@ body:
       description: Please provide your email below
       placeholder: ex. email@example.com
     validations:
-      required: false
+      required: true
   - type: textarea
     id: general-comments
     attributes:
