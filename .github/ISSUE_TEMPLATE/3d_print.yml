@@ -1,11 +1,38 @@
-name: Bug 
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
+name: Submit a 3D Print Request
+description: Submit a 3D Print Request
+title: "[Submit a 3D Print Request]: "
+labels: ["3d-print"]
 assignees:
   - octocat
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this print request!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: Please provide your email below
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: general-comments
+    attributes:
+      label: About Your Print
+      description: Tell us about your print (Dimensions)
+      placeholder: Please provide them in mm of length, width, and height
+    validations:
+      required: true
+  - type: dropdown
+    id: material
+    attributes:
+      label: Material
+      description: What Material?
+      options:
+        - PLA
+        - PETG
+        - Don't Know
+    validations:
+      required: true
