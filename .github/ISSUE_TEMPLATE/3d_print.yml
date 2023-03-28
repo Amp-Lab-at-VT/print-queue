@@ -1,6 +1,6 @@
 name: Submit a 3D Print Request
 description: Submit a 3D Print Request
-title: "[Submit a 3D Print Request]: "
+title: "[3d-print]: "
 labels: ["3d-print"]
 assignees:
   - octocat
@@ -21,7 +21,7 @@ body:
     id: general-comments
     attributes:
       label: About Your Print
-      description: Tell us about your print (Dimensions)
+      description: Tell us about your print (Dimensions). Also attach your file by dropping it into this text body
       placeholder: Please provide them in mm of length, width, and height
     validations:
       required: true
