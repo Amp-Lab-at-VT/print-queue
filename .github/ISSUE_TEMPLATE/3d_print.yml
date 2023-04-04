@@ -21,7 +21,7 @@ body:
     id: general-comments
     attributes:
       label: About Your Print
-      description: Tell us about your print (Dimensions). Also attach your file by dropping it into this text body (STL or 3mf)
+      description: Tell us about your print (Dimensions). Also attach your file by dropping it into this text body (STL or 3mf are expectd in a compressed ZIP file)
       placeholder: Please provide them in mm of length, width, and height
     validations:
       required: true
